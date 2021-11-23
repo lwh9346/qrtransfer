@@ -1,7 +1,8 @@
 <template>
   <div>
-    <h2>receiver</h2>
     <vue-qr :text="data"></vue-qr>
+    <p>如果二维码没有变动说明分享者还未分享二维码或所分享二维码是静态的</p>
+    <p>本站无法分享静态二维码</p>
   </div>
 </template>
 

@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h2>streamer</h2>
     <p>{{ error }}</p>
     <h3 v-if="loading">加载中</h3>
     <div class="streamer">

@@ -8,6 +8,8 @@
     </select>
     <stream v-if="model == 'streamer'"></stream>
     <receive v-if="model == 'receiver'"></receive>
+    <br>
+    <a href="https://github.com/lwh9346/qrtransfer">源代码</a>
   </div>
 </template>
 
