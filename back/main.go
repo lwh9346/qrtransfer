@@ -76,7 +76,13 @@ func GetQRCodeHandler(c *gin.Context) {
 		defer conn.Close()
 		signal := make(chan (int))
 		report := make(chan (error))
+
 		roomLock.Lock()
+		_, err := conn.Write([]byte(room.QR))
+		if err != nil {
+			roomLock.Unlock()
+			return
+		}
 		room.AddClient(&Client{Signal: signal, Report: report, Alive: true})
 		log.Println("adding client")
 		roomLock.Unlock()
