@@ -2,7 +2,7 @@
 
 ## 简介
 
-[LiveDemo]([qrtransfer (whl.red)](https://qr.whl.red/ui/))
+[LiveDemo](https://qr.whl.red/ui/)
 
 实时转发动态二维码，一次只能有一个（群）人用。
 
